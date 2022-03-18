@@ -1,0 +1,18 @@
+deployment:
+  name: openshift-solr
+  image: bitnami/solr:8.11.1-debian-10-r18
+
+service:
+  name: openshift-solr
+
+route:
+  name: solr
+
+storage:
+  name: solr-data-pvc
+  size: 1Gi
+  storageClassName: rook-ceph-fs
+  volumeMode: Filesystem
+
+solr:
+  coreName: contest

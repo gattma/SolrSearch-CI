@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: apache-solr
+spec:
+  project: contest
+  source:
+    repoURL: 'https://github.com/gattma/SolrSearch-CI'
+    path: SolrSearchChart
+    targetRevision: develop
+  destination:
+    server: 'https://kubernetes.default.svc'
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
