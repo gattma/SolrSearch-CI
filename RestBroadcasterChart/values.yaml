@@ -1,0 +1,13 @@
+rest-broadcaster:
+  fullnameOverride: rest-broadcaster
+  nameOverride: rest-broadcaster
+  image:
+    name: ghcr.io/gattma/restbroadcaster
+    tag: sha-5083cca
+  route:
+    enabled: true
+  env:
+    - name: HOSTS_LEADER
+      value: https://frontend-facade-contest.apps.play.gepaplexx.com
+    # - name: HOSTS_BROADCASTS
+    #   value: https://frontend-facade-contest-anom1.apps.play.gepaplexx.com,https://frontend-facade-contest-anom2.apps.play.gepaplexx.com

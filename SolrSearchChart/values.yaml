@@ -3,19 +3,21 @@ search-service:
   nameOverride: search-service
   image:
     name: ghcr.io/gattma/solrsearchservice-develop
-    tag: sha-b750193
+    tag: sha-f2e46a4
   route:
     enabled: true
   env:
     - name: SOLR_HOSTPORT
-      value: TODO
+      value: solr-contest.apps.play.gepaplexx.com
+    - name: SOLR_CORE
+      value: contest
 
 frontend-facade:
   fullnameOverride: frontend-facade
   nameOverride: frontend-facade
   image:
     name: ghcr.io/gattma/solrfrontendfacade-develop
-    tag: sha-b750193
+    tag: sha-f2e46a4
   route:
     enabled: true
   env:

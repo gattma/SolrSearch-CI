@@ -28,7 +28,7 @@ spec:
           ports:
             - containerPort: 8983
               protocol: TCP
-          resources: {} # TODO
+          resources: {}
           volumeMounts:
             - name: openshift-solr-volume-1
               mountPath: /var/solr
@@ -36,10 +36,3 @@ spec:
               mountPath: "/var/solr/data"
           terminationMessagePolicy: File
           imagePullPolicy: IfNotPresent
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 25%
-      maxSurge: 25%
-  revisionHistoryLimit: 10
-  progressDeadlineSeconds: 600
