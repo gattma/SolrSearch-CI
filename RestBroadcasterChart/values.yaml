@@ -9,5 +9,5 @@ rest-broadcaster:
   env:
     - name: HOSTS_LEADER
       value: https://frontend-facade-contest.apps.play.gepaplexx.com
-    # - name: HOSTS_BROADCASTS
-    #   value: https://frontend-facade-contest-anom1.apps.play.gepaplexx.com,https://frontend-facade-contest-anom2.apps.play.gepaplexx.com
+    - name: HOSTS_BROADCASTS
+      value: https://frontend-facade-anomaly-response-time-contest.apps.play.gepaplexx.com
