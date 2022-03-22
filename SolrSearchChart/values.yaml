@@ -1,9 +1,9 @@
 search-service:
-  fullnameOverride: search-service
-  nameOverride: search-service
+  fullnameOverride: search-service-anomaly-response-time
+  nameOverride: search-service-anomaly-response-time
   image:
-    name: ghcr.io/gattma/solrsearchservice-develop
-    tag: sha-f2e46a4
+    name: ghcr.io/gattma/solrsearchservice-anomaly-response-time
+    tag: sha-8ea8235
   route:
     enabled: true
   env:
@@ -13,13 +13,13 @@ search-service:
       value: contest
 
 frontend-facade:
-  fullnameOverride: frontend-facade
-  nameOverride: frontend-facade
+  fullnameOverride: frontend-facade-anomaly-response-time
+  nameOverride: frontend-facade-anomaly-response-time
   image:
-    name: ghcr.io/gattma/solrfrontendfacade-develop
-    tag: sha-f2e46a4
+    name: ghcr.io/gattma/solrfrontendfacade-anomaly-response-time
+    tag: sha-8ea8235
   route:
     enabled: true
   env:
     - name: SOLRSEARCHSERVICE_BASEURL
-      value: https://search-service-contest.apps.play.gepaplexx.com
+      value: https://search-service-anomaly-response-time-contest.apps.play.gepaplexx.com
