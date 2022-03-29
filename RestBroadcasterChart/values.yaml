@@ -3,7 +3,7 @@ rest-broadcaster:
   nameOverride: rest-broadcaster
   image:
     name: ghcr.io/gattma/restbroadcaster
-    tag: sha-5083cca
+    tag: sha-ad7adfb
   route:
     enabled: true
   env:
