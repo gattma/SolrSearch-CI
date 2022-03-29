@@ -3,7 +3,7 @@ search-service:
   nameOverride: search-service-anomaly-response-time
   image:
     name: ghcr.io/gattma/solrsearchservice-anomaly-response-time
-    tag: sha-6b393e1
+    tag: sha-39f0e3f
   # TODO Deployment Annotation not supported by bke-runtime-minimal
   # annotations:
   #    sidecar.jaegertracing.io/inject: "true"
@@ -22,7 +22,7 @@ frontend-facade:
   nameOverride: frontend-facade-anomaly-response-time
   image:
     name: ghcr.io/gattma/solrfrontendfacade-anomaly-response-time
-    tag: sha-6b393e1
+    tag: sha-39f0e3f
   # TODO Deployment Annotation not supported by bke-runtime-minimal
   # annotations:
   #    sidecar.jaegertracing.io/inject: "true"
