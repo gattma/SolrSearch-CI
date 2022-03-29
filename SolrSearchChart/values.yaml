@@ -3,7 +3,7 @@ search-service:
   nameOverride: search-service
   image:
     name: ghcr.io/gattma/solrsearchservice-develop
-    tag: sha-3b69b97
+    tag: sha-9c2d9c4
   # TODO Deployment Annotation not supported by bke-runtime-minimal
   # annotations:
   #    sidecar.jaegertracing.io/inject: "true"
@@ -20,7 +20,7 @@ frontend-facade:
   nameOverride: frontend-facade
   image:
     name: ghcr.io/gattma/solrfrontendfacade-develop
-    tag: sha-3b69b97
+    tag: sha-9c2d9c4
   # TODO Deployment Annotation not supported by bke-runtime-minimal
   # annotations:
   #    sidecar.jaegertracing.io/inject: "true"
